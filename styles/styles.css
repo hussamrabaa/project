@@ -116,23 +116,11 @@ header{
     font-size: 4rem;
     color: #ffffff;
     padding: 1rem;
-    transform: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .fa-times:hover{
-    animation: rotateanimation 200ms ease-in-out;
-}
-
-/* animation */
-
-@keyframes rotateanimation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(90deg);
-    }
-}
+    transform: rotate(90deg);}
 
 /* hero section */
 .hero-container{
@@ -152,6 +140,23 @@ header{
     left: 25vw;
     transform: translate(-50%, -50%);
     text-align: left;
+    animation-name: floatingText;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+/* animation */
+
+@keyframes floatingText {
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 5px;
+    }
+    100%{
+        margin-top: 0px;
+    }
 }
 
 
