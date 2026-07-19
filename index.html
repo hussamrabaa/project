@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="project example">
+        <meta name="keywords" content="project, example">
+        <meta name="author" content="Hussam Rabaa">
+        <title>Project Example</title>
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+        <!--stylesheet-->
+        <link rel="stylesheet" href="styles/styles.css">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+
+    <body>
+        <!--overlay for mobile-->
+        <div id="overlay">
+            <div>
+                <i class="fa fa-times" title="close button" onclick="off()"></i>
+            </div>
+            <div class="overlay-text">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+            </div>
+        </div>
+        <header>
+            <nav class="nav full-nav">
+                <div>
+                    <a href="index.html">
+                        <img src="images/logo-removebg-preview.png" alt="logo" style="width: 18%;">
+                    </a>
+                </div>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+            <!--mobile nav-->
+            <nav class="nav mobile-nav">
+                <div>
+                    <img src="images/logo-removebg-preview.png" 
+                    alt="logo" style="width: 25%;" load="lazy">
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars" title="button.to.open.navigation" onclick="on()"></i>
+                </div>
+            </nav>
+        </header>
+    </body>
+
+    <main>
+        <div class="hero-container">
+            <img class="hero-image" src="images/images.png" 
+            alt="hero image" load="lazy">
+            <div class="hero-text">
+                <h1>project example</h1>
+            </div>
+            <div class="red-spacer">
+            </div>
+        </div>
+        <!--grid example-->
+        <div class="food">
+            <h2>Top Sellers</h2>
+            <div class="food-grid">
+                <div class="food-item">
+                    <h4>Burger 19.99 SAR</h4>
+                    <img src="images/burger.png" alt="burger" load="lazy"style="width: 100%;">
+                    <h1 class="short-desc">Ooooh Burger</h1>
+                    <p class="long-desc" style="display:none">A juicy beef patty with melted cheddar, fresh lettuce, tomatoes, and our signature sauce — served in a toasted sesame bun.</p>
+                    <button class="toggle-btn">Read More</button>
+                </div>
+                <div class="food-item">
+                    <h4>Apple Juice 5.99 SAR</h4>
+                    <img src="images/Juice.jpg" alt="juice" load="lazy"style="width: 100%;">
+                    <h1 class="short-desc">Mmmm juice</h1>
+                    <p class="long-desc" style="display:none">Freshly squeezed apples, pure and refreshing. No added sugar — just the natural sweetness of hand-picked apples.</p>
+                    <button class="toggle-btn">Read More</button>
+                </div>
+                <div class="food-item">
+                    <h4>kebab 29.99 SAR</h4>
+                    <img src="images/kebab.jpg" alt="kebab" load="lazy"style="width: 100%;">
+                    <h1 class="short-desc">kebab so yummy and nice</h1>
+                    <p class="long-desc" style="display:none">Tender marinated meat grilled to perfection on skewers, served with warm pita bread and garlic sauce.</p>
+                    <button class="toggle-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <img src="images/logo-removebg-preview.png" alt="logo" style="width: 13%;" loading="lazy">
+        </div>
+        <div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+            </div>
+            <div>
+                <h4>Rights Reserved</h4>
+            </div>
+        </div>
+        <div>
+            <img src="images/insta.png" alt="other logo" style="width: 5%;" loading="lazy">
+            <img src="images/facebook.png" alt="other logo" style="width: 5%;" loading="lazy">
+            <img src="images/tiktok.png" alt="other logo" style="width: 5%;" loading="lazy">
+            <img src="images/whatsapp.png" alt="other logo" style="width: 5%;" loading="lazy">
+        </div>
+    </footer>
+
+</html>

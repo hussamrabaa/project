@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="project example">
+        <meta name="keywords" content="project, example">
+        <meta name="author" content="Hussam Rabaa">
+        <title>Project Example</title>
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+        <!--stylesheet-->
+        <link rel="stylesheet" href="styles/styles.css">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+
+    <body>
+        <!--overlay for mobile-->
+        <div id="overlay">
+            <div>
+                <i class="fa fa-times" title="close button" onclick="off()"></i>
+            </div>
+            <div class="overlay-text">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+            </div>
+        </div>
+        <header>
+            <nav class="nav full-nav">
+                <div>
+                    <img src="images/logo-removebg-preview.png" alt="logo" style="width: 18%;">
+                </div>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+            <!--mobile nav-->
+            <nav class="nav mobile-nav">
+                <div>
+                    <img src="images/logo-removebg-preview.png" 
+                    alt="logo" style="width: 25%;" load="lazy">
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars" title="button.to.open.navigation" onclick="on()"></i>
+                </div>
+            </nav>
+        </header>
+    </body>
+
+    <main>
+        
+        <div class="red-spacer"></div>
+        <!--About section-->
+        <div>
+            <h1>About Us</h1>
+            <div class="about">
+                <img src="images/chef.png" alt="chef" loading="lazy" width="85%">
+                <div class="about-child">
+                    <div>
+                        <h2>Our Mission</h2>
+                        <p>
+                            Our mission is to create memorable dining experiences by serving exceptional 
+                            food made from high-quality, fresh ingredients while delivering warm, 
+                            genuine hospitality. We are committed to exceeding our guests' 
+                            expectations through outstanding service, innovative flavors, 
+                            and a welcoming atmosphere where every meal becomes a special occasion.
+                            By embracing quality, consistency, and continuous improvement, 
+                            we strive to build lasting relationships with our customers, 
+                            support our local community, and become a trusted destination for great 
+                            food and unforgettable moments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div>
+            <img src="images/logo-removebg-preview.png" alt="logo" style="width: 13%;" loading="lazy">
+        </div>
+        <div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+            </div>
+            <div>
+                <h4>Rights Reserved</h4>
+            </div>
+        </div>
+        <div>
+            <img src="images/insta.png" alt="other logo" style="width: 5%;" loading="lazy">
+            <img src="images/facebook.png" alt="other logo" style="width: 5%;" loading="lazy">
+            <img src="images/tiktok.png" alt="other logo" style="width: 5%;" loading="lazy">
+            <img src="images/whatsapp.png" alt="other logo" style="width: 5%;" loading="lazy">
+        </div>
+    </footer>
+
+</html>
