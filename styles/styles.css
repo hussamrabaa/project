@@ -35,13 +35,13 @@ header{
     font-weight: bolder;
 }
 
-.nav div:nth-child(2) a:nth-child(-n+3){
+.nav div:nth-child(2) a:nth-child(n){
     color: #680b0b;
     text-decoration: none;
     padding:1rem;
 }
 
-.nav div:nth-child(2) a:nth-child(-n+3):hover{
+.nav div:nth-child(2) a:nth-child(n):hover{
     color:#b41515
 }
 
@@ -370,53 +370,31 @@ header{
 
 /* login page */
 
-.login{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    justify-content: center;
-    grid-gap: .5rem;
-    color: #ffffff;
+.form1 div{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-self: center;
+    margin: 0 auto 1rem;
     background-color: #680b0b;
     padding: 1rem;
-    border-radius: 30px;
-    justify-self: center;
-    width:30rem;
-    height:20rem;
-    margin-bottom: 2rem;
+    border: none;
+    border-radius: 2rem;
+    color: #ffffff;
 }
 
-.login button{
+.form1 button{
     background-color: #ffffff;
     color: #680b0b;
-    border: none;
-    border-radius: 1rem;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-top: .5rem;
-    height:3.5rem;
-}
-
-.login button:hover{
-    background-color: #bfbfbf;
-}
-
-.login input{
+    max-width: fit-content;
+    justify-self: center;
     border:none;
-    border-radius: 1rem;
-    height: 2rem;
-    width:20rem;
+    border-radius: .25rem;
 }
 
-@media (max-width: 760px){
-    .login{
-        max-width: 18rem;
-        margin: 0 auto 2rem;
-    }
-
-    .login input{
-        width:15rem
-    }
-
+.form1 input{
+    border:none;
+    border-radius: .35rem;
+    color:#680b0b;
+    font-weight: bolder;
 }
+
