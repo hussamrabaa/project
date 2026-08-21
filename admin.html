@@ -6,7 +6,7 @@
         <meta name="description" content="project example">
         <meta name="keywords" content="project, example">
         <meta name="author" content="Hussam Rabaa">
-        <title>Project Example</title>
+        <title>Project menu page Example</title>
         <!--google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,9 +28,8 @@
             </div>
             <div class="overlay-text">
                     <a href="index.html">Home</a>
-                    <a href="menu.html">Menu</a>
-                    <a href="about.html">About</a>
-                    <a href="login.html">Login</a>
+
+
             </div>
         </div>
         <header>
@@ -59,39 +58,69 @@
         </header>
 
     <main>
-        
-        <div class="red-spacer"></div>
-        <!--About section-->
-        <div>
-            <h1>Login</h1>
-            <div class="login">
-                <form>
-                    <div class="form1">
-                        <div>
-                            <div>
-                                <div class="username">
-                                <lable for="username">username</lable>
-                                <input type="text" id="username" maxlength="20" placeholder="Hussam Rabaa">
-                                </div>
-                                <div class="password">
-                                <lable for="password">Password</lable>
-                                <input type="text" id="password" maxlength="10" placeholder="12345678">
-                                </div>
-                                <button>
-                                    <a href="admin.html">Sign in</a>
-
-                                </button>
-                            </div>
-
-                            <a href="register.html">Don't have an account? Register</a>
-
-                        </div>
-                    </div>
-                </form>
-
-            </div>
+        <div class="hero-container">
+            <div class="red-spacer"></div>
         </div>
-        
+
+        <div class="content-table">
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>image</th>
+                    <th>class</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="images/burger.png" alt="burger" width="50px" height="50px" style="border-radius: .5rem;"></td>
+                    <td>burger</td>
+                    <td>Classic Burger</td>
+                    <td>$9.99</td>
+                    <td>A delicious classic burger with lettuce, tomato, and special sauce.</td>
+                    <td>
+                        <div>
+                            <i class="fa-solid fa-trash-can"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="images/juice.jpg" alt="juice" width="50px" height="50px" style="border-radius: .5rem;"></td>
+                    <td>juice</td>
+                    <td>Orange Juice</td>
+                    <td>$12.99</td>
+                    <td>A refreshing Italian juice with fresh oranges.</td>
+                    <td>
+                        <div>
+                            <i class="fa-solid fa-trash-can"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="images/kebab.jpg" alt="kebab" width="50px" height="50px" style="border-radius: .5rem;"></td>
+                    <td>kebab</td>
+                    <td>Grilled Kebab</td>
+                    <td>$10.99</td>
+                    <td>Authentic grilled kebab with spices and served with rice.</td>
+                    <td>
+                        <div>
+                            <i class="fa-solid fa-trash-can"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="add-item-container">
+            <button class="add-item-button">Add Item</button>
+        </div>
     </main>
 
     <footer class="footer">
@@ -104,6 +133,7 @@
                 <a href="menu.html">Menu</a>
                 <a href="about.html">About</a>
                 <a href="login.html">Login</a>
+
             </div>
             <div>
                 <h4>Rights Reserved</h4>
@@ -117,5 +147,5 @@
         </div>
     </footer>
     </body>
-    
+
 </html>
