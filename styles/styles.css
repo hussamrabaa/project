@@ -548,3 +548,60 @@ a:hover{
     padding: .5rem 1rem;
     margin: 0;
 }
+
+/* add */
+
+.add-food{
+    display: block;
+    max-width: 80%;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+.add-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 70%;
+    margin: 5rem;
+    background-color: #680b0b;
+    padding: 2rem;
+    color: #ffffff;
+    border: #000;
+    border-radius: 3rem;
+    gap: 1rem;
+}
+
+.add-form div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 300px;
+    font-size: larger;
+}
+
+.add-form div {
+    border-radius: .5rem;
+}
+
+.save{
+    max-width: fit-content;
+    max-height: fit-content;
+    align-self:center;
+    justify-self: center;
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.save a{
+    background-color: #ffffff;
+    color: #680b0b;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.save a:hover{
+    color: #b41515;
+
+}
