@@ -163,7 +163,9 @@ header{
 
 @media (max-width: 768px) {
     .hero-text{
-        left: 30vw
+        left: 30vw;
+        font-size: 1rem !important;
+
     }
 }
 
@@ -407,6 +409,7 @@ header{
 .form1 input{
     border:none;
     border-radius: .35rem;
+    padding: .5rem;
     color:#680b0b;
     font-weight: bolder;
     width: stretch; 
@@ -465,20 +468,28 @@ a:hover{
 .form2 button a{
     color: #680b0b;
     text-decoration: none;
+    padding: 25px 20px;
+    
 }
 
 .form2 input{
     border:none;
     border-radius: .35rem;
+    padding: .5rem;
     color:#680b0b;
     font-weight: bolder;
     width: stretch;
     height: 2rem; 
 }
 
-@media (max-width = 760px){
+@media (max-width < 760px){
     .form2{
-        width: 90% !important;
+        margin: 0;
+        width: 20% !important;
+       
+    }
+    .form2 input{
+        width: 10% !important;
     }
 }
 
